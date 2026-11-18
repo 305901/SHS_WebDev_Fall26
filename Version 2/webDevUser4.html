@@ -18,12 +18,68 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <style>
+    <style> #banner {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
 
-    </style>
+    </style> div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 2rem auto;
+    position: relative;
+    background: lightgreen;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: white;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: blue;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    top: 50%;
+    border-bottom-color: black;
+}
 </head>
 
-<body>
+<body><section>
+    <h2>About Snowboarding</h2>
+    <p>I like snowboarding because it is fun.
+    I enjoy going with my friends and learning
+    new tricks.</p>
+</section>
     <main class="wideMargin">
 
         <!-- Your 1st Heading-->
@@ -69,8 +125,19 @@
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+    <h1>Welcome to My Website</h1>
+    <p>This website is about snowboarding and my hobbies.</p>
+</div>
         </div>
         <div id="face">
+    <div class="left eye">
+        <div class="pupil"></div>
+    </div>
+    <div class="right eye">
+        <div class="pupil"></div>
+    </div>
+    <div id="mouth"></div>
+</div>
 
         </div>
     </main>
